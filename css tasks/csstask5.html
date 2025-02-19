@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Styled Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #e6f35b;
+        font-family: "Times New Roman", Times, serif;
+        color: #662262;
+      }
+      .container {
+        width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f1f14c;
+      }
+      h1 {
+        color: #662262;
+        margin-top: 0;
+      }
+      .sidebar {
+        float: left;
+        width: 200px;
+        margin-right: 20px;
+      }
+      .nav-box {
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: left;
+      }
+      .nav-box a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+      }
+      .content {
+        overflow: auto;
+      }
+      .footer-note {
+        margin-top: 30px;
+        font-style: italic;
+        font-size: 0.9em;
+        color: #333333;
+      }
+      hr {
+        border: none;
+        border-top: 1px dashed #333333;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="nav-box">
+          <a href="#">Home page</a>
+        </div>
+        <div class="nav-box">
+          <a href="#">Musings</a>
+        </div>
+        <div class="nav-box">
+          <a href="#">My town</a>
+        </div>
+        <div class="nav-box">
+          <a href="#">Links</a>
+        </div>
+      </div>
+      <div class="content">
+        <h1>My first styled page</h1>
+        <h3>Welcome to my styled page!</h3>
+        <p>
+          It lacks images, but at least it has style. And it has links, even if
+          they don’t go anywhere...
+        </p>
+        <p>There should be more here, but I don’t know what yet.</p>
+        <hr />
+        <p class="footer-note">
+          Made 5 April 2004<br />
+          by myself.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

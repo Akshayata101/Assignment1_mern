@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(
+          190,
+          3,
+          53
+        ); /* Magenta background for the whole page */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        width: 300px;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(234, 85, 149); /* White background for the form */
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid black;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form" action="#" method="post">
+      <h2>User Registration</h2>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="repassword">Re-enter Password:</label>
+      <input type="password" id="repassword" name="repassword" required />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" required />
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+      <br />
+
+      <label>Languages Known:</label>
+      <input type="checkbox" id="english" name="languages" value="English" />
+      <label for="english">English</label>
+      <input type="checkbox" id="spanish" name="languages" value="Spanish" />
+      <label for="spanish">Spanish</label>
+      <input type="checkbox" id="french" name="languages" value="French" />
+      <label for="french">French</label>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="" disabled selected>Select Country</option>
+        <option value="USA">USA</option>
+        <option value="India">India</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>

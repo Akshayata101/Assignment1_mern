@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+        width: 300px;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .remember {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 10px;
+      }
+      .remember input {
+        width: auto;
+        margin-right: 10px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        width: 48%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login-btn {
+        background-color: blue;
+        color: white;
+      }
+      .cancel-btn {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <img
+        src="https://th.bing.com/th/id/OIP.hORKQer_FatTMvWaiz3H-gAAAA?rs=1&pid=ImgDetMain"
+        alt="Profile Picture"
+        class="profile-pic"
+      />
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <div class="remember">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember Me</label>
+      </div>
+      <div class="buttons">
+        <button class="login-btn">Login</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
