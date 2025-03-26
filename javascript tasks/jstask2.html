@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: left;
+        margin: 50px;
+      }
+      input {
+        padding: 8px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      #result {
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Reverse a String</h2>
+    <input type="text" id="textInput" placeholder="Enter a string" />
+    <button onclick="reverseString()">Reverse</button>
+    <p id="result"></p>
+
+    <script>
+      function reverseString() {
+        let str = document.getElementById("textInput").value;
+        if (str.trim() === "") {
+          document.getElementById("result").innerText =
+            "Please enter a string.";
+          return;
+        }
+
+        let reversed = str.split("").reverse().join("");
+        document.getElementById("result").innerText =
+          "Reversed String: " + reversed;
+      }
+    </script>
+  </body>
+</html>

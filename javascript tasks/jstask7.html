@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      h2 {
+        color: darkblue;
+      }
+
+      .train-container {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+
+      .train {
+        position: absolute;
+        left: 0;
+        width: 150px;
+        height: auto;
+      }
+
+      @keyframes moveTrain {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .moving {
+        animation: moveTrain 5s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="train-container">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/011/379/895/original/3d-animation-bullet-train-cartoon-with-railroad-tracks-sky-train-transport-toy-summer-travel-service-planning-traveler-tourism-train-isolated-on-pink-background-3d-render-illustration-alpha-video.jpg"
+        alt="Train"
+        class="train"
+        id="train"
+      />
+    </div>
+
+    <button onclick="startTrain()">Start</button>
+    <button onclick="stopTrain()">Stop</button>
+
+    <script>
+      function startTrain() {
+        document.getElementById("train").classList.add("moving");
+      }
+
+      function stopTrain() {
+        document.getElementById("train").classList.remove("moving");
+      }
+    </script>
+  </body>
+</html>
